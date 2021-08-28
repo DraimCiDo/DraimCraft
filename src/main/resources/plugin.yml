@@ -8,6 +8,11 @@ commands:
     description: Основная команда плагина
     usage: /draimcraft reload
 permissions:
+  draimcraft.bypass:
+    description: Позволит игрокам обойти ВСЕ блокировки рецептов
+    default: op
   draimcraft.reload:
     description: Доступ к команде /draimcraft reload
     default: op
+  draimcraft.groups:
+    description: Используется для определения конкретных рецептов, которые будут заблокированы для определенных групп игроков
