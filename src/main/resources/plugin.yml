@@ -2,4 +2,12 @@ name: DraimCraft
 version: '${version}'
 main: me.draimgoose.draimcraft.DraimCraft
 api-version: 1.17
-authors: [ DraimGooSe ]
+author: DraimGooSe
+commands:
+  draimcraft:
+    description: Основная команда плагина
+    usage: /draimcraft reload
+permissions:
+  draimcraft.reload:
+    description: Доступ к команде /draimcraft reload
+    default: op
