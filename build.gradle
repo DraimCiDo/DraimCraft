@@ -1,10 +1,9 @@
 plugins {
     id 'java'
-    id 'org.jetbrains.kotlin.jvm' version '1.5.30'
 }
 
 group = 'me.draimgoose'
-version = '0.1.2'
+version = '0.1.4'
 
 repositories {
     mavenCentral()
@@ -20,7 +19,6 @@ repositories {
 
 dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.17.1-R0.1-SNAPSHOT'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 }
 
 def targetJavaVersion = 8
