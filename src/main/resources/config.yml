@@ -1,7 +1,7 @@
 draimcraft:
   enabled: true
   config-reloaded: "&7Конфигурация перезапущена!"
-  incorrect-syntax: "&7Не верный ситаксис: %command%"
+  incorrect-syntax: "&7Пропишите команду - &6%command%"
   message: '&7Вы не можете скрафтить %item%'
   block-all-items: false
   default-block-list:
