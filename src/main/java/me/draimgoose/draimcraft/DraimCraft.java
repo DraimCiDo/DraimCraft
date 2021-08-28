@@ -33,7 +33,7 @@ public final class DraimCraft extends JavaPlugin {
         blockAllItems = getConfig().getBoolean("draimcraft.block-all-items");
         materialList = getConfig().getStringList("draimcraft.default-block-list");
         enableGroups = getConfig().getBoolean("draimcraft.enable-groups");
-        groupNames = getConfig().getConfigurationSection("draimcraft.group").getKeys(false);
+       groupNames = getConfig().getConfigurationSection("draimcraft.groups").getKeys(false);
     }
 
     public boolean isDCEnabled() {
