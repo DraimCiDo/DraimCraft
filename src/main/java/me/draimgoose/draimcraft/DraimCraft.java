@@ -20,6 +20,7 @@ public final class DraimCraft extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
         updateConfig();
+        saveDefaultConfig();
     }
 
     private void updateConfig() {
@@ -31,6 +32,42 @@ public final class DraimCraft extends JavaPlugin {
         materialList = getConfig().getStringList("draimcraft.default-block-list");
         enableGroups = getConfig().getBoolean("draimcraft.enable-groups");
         groupNames = getConfig().getConfigurationSection("draimcraft.group").getKeys(false);
+    }
+
+    public boolean isDCEnabled() {
+        return enabled;
+    }
+
+    public String getConfigReloadedMessage() {
+        return configReloaded;
+    }
+
+    public String getIncorrectSyntaxMessage() {
+        return incorrectSyntax;
+    }
+
+    public String getNotPermittedToCraftMessage() {
+        return message;
+    }
+
+    public boolean isBlockAllItemsEnabled() {
+        return blockAllItems;
+    }
+
+    public List<String> getDefaultBlockList() {
+        return materialList;
+    }
+
+    public boolean isGroupsEnabled() {
+        return enableGroups;
+    }
+
+    public Set<String> getGroupNames() {
+        return groupNames;
+    }
+
+    public List<String> getGroupMaterials(String groupName) {
+        return getConfig().getStringList("draimcraft.groups." + groupName);
     }
 
     @Override
