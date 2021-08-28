@@ -24,7 +24,7 @@ public final class DraimCraft extends JavaPlugin {
         getCommand("draimcraft").setExecutor(new DCCommand(this));
     }
 
-    private void updateConfig() {
+   public void updateConfig() {
         enabled = getConfig().getBoolean("draimcraft.enabled");
         configReloaded = getConfig().getString("draimcraft.config-reloaded");
         incorrectSyntax = getConfig().getString("draimcraft.incorrect-syntax");
