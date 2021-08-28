@@ -21,6 +21,7 @@ public final class DraimCraft extends JavaPlugin {
         // Plugin startup logic
         updateConfig();
         saveDefaultConfig();
+        getCommand("draimcraft").setExecutor(new DCCommand(this));
     }
 
     private void updateConfig() {
