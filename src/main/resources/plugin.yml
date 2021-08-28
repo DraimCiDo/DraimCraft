@@ -1,0 +1,5 @@
+name: DraimCraft
+version: '${version}'
+main: me.draimgoose.draimcraft.DraimCraft
+api-version: 1.17
+authors: [ DraimGooSe ]
